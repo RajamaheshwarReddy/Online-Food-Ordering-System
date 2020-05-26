@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link href="style_cart.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" 
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+     <title>Spice Craft cart</title>
+</head>   
+<body>
+
+<div id="top">
+    <h1 class="logo">Spice Craft</h1>
+    <img class="cart-icon cart-toggle" src="img/cart.png" alt="cart">
+    <span class="totalitems"></span>
+</div>
+
+<div class="first"></div>
+<div class="menu" id="menu">
+    <h1>Starter</h1>
+        <div class="starter items"></div>
+        <div class="bgfix first-bg"></div>
+
+    <h1>Dessert</h1>
+        <div class="dessert items"></div>
+        <div class="bgfix second-bg"></div>
+
+    <h1>Brunch</h1>
+        <div class="brunch items"></div>
+        <div class="bgfix third-bg"></div>
+
+    <h1>Drink</h1>
+        <div class="drink items"></div>
+    
+</div>
+
+<div class="cart-container">
+    <table class="cart">
+        <th>Product</th>
+        <th colspan="2">Price</th>
+    </table>
+    <table><tr><td class="total">Total</td></tr></table>
+    <div class="send-order">Send Order</div>
+
+</div>
+
+
+<script src="cart.js"></script>
+<script src="firebase.js"></script>
+
+</body>
+</html>

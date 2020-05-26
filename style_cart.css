@@ -1,0 +1,239 @@
+body
+{
+    font-family: 'Courgette',cursive;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+    grid-template-rows: repeat(3,minmax(200px,450px));
+}
+
+#top
+{
+    position: fixed;
+    background: saddlebrown;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(70px,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(75px,110px));
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 0px;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.8);
+}
+.logo
+{
+    color: transparent;
+    font-weight: 100;
+    background: transparent;
+    box-shadow: inset 2px 2px 20px 2px black;
+    font-size: 3.6rem;
+    padding: 14px;
+    text-align: center;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text !important;
+    background-color: black;
+    border-radius: 5px;
+    grid-column: 2/4;
+}
+
+.cart-icon
+{
+    width: 55px;
+    height: 55px;
+    justify-self: center;
+    grid-column: 4;
+    border: solid 1px black;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.6);
+}
+
+.cart-icon:active
+{
+    box-shadow: inset 0px 0px 4px 1px rgba(0,0,0,0.6);
+}
+
+.first
+{
+    background-image: url(img/bg-1.jpg);
+    grid-column: 1/4;
+    grid-row: 1/2;
+    clip-path: polygon(0 0%, 100% 0, 100% 80%,0 98%);
+    background-attachment: fixed;
+    background-position: top;
+}
+
+/*********************
+MENU
+***************************/
+
+.menu
+{
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+.menu h1
+{
+    width: 250px;
+    text-align: center;
+    padding: 8px;
+    border-bottom: dotted 4px saddlebrown;
+    color : saddlebrown
+}
+
+.menu > div.items
+{
+    display: grid;
+    padding: 8px;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit,minmax(200px,250px));
+    grid-template-rows: repeat(auto-fit,minmax(50px,1fr));
+    grid-gap: 18px;
+}
+
+.bgfix
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-size: cover;
+    background-attachment: fixed;
+    grid-template-rows: 600px;
+}
+.first-bg
+{
+    background-image: linear-gradient(rgb(0,0,0),rgba(139,69,19,0.6)),url(img/bg-2.jpg);
+    clip-path: polygon(0 20%, 100% 2%, 100% 75%, 0 98%);
+}
+.second-bg
+{
+    background-image: linear-gradient(rgb(0,0,0),rgba(139,69,19,0.6)),url(img/bg-3.jpg);
+    clip-path: polygon(0 20%, 100% 2%, 100% 75%, 0 98%);
+}
+
+.third-bg
+{
+    background-image: linear-gradient(rgb(0,0,0),rgba(139,69,19,0.6)),url(img/bg-4.jpg);
+    clip-path: polygon(0 20%, 100% 2%, 100% 75%, 0 98%);
+}
+
+
+.product-box
+{
+    background: #572603b3;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 5px black;
+}
+
+.price, .title
+{
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.title
+{
+    height: 100px;
+}
+
+.image
+{
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    border: solid 1px white;
+}
+
+.cart-container
+{
+    position: fixed;
+    background: saddlebrown;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.cart-container > table:nth-child(1)
+{
+    width: 40%;
+    margin: 150px 0px 0px 480px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.cart-container > table:nth-child(2)
+{
+    width: 40%;
+    margin: 0px 0px 0px 480px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+table tr td
+{
+    border-bottom: dashed 1px black;
+    padding: 10px;
+}
+
+table tr:nth-child(1)
+{
+     background: black;
+    color: white;
+    line-height: 2;
+}
+
+.removeme:hover
+{
+    cursor: pointer;
+}
+
+.totalitems
+{
+    grid-column: 4;
+    justify-self: center;
+    background: limegreen;
+    color: white;
+    padding: 8px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin: 2px 2px 2px 130px;
+    border-radius: 20px;
+    position: absolute;
+    display: none;
+    transform: scale(1.5);
+}
+
+.send-order
+{
+    width: 20%;
+    background: limegreen;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: white;
+    border-radius: 20px;
+}
+
+.send-order:hover
+{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
